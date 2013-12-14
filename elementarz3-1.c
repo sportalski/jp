@@ -1,11 +1,11 @@
 #include <stdio.h>
 int main()
 {
-    int i;
-    while ((i = getchar()) != EOF)
-        if (i == '\t')
+    int c;
+    while ((c = getchar()) != EOF)
+        if (c == '\t')
             printf("\\t");
-        else if (i == '\\')
+        else if (c == '\\')
             printf("\\\\");
         else
             putchar(c);
